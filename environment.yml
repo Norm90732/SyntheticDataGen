@@ -12,6 +12,7 @@ dependencies:
   - ipykernel
   - torchmetrics
   - scikit-learn
+  - einops
   - pip:
       - --extra-index-url https://download.pytorch.org/whl/cu128
       - torch>=2.7.0
