@@ -1,0 +1,6 @@
+eries)
+        self.ks_test(self.og_series, title="Original")
+        self.correlation_matrix(df=self.og_df, title="Original")
+        self.pca_analysis(df=self.og_df, title="Original PCA")
+        self.t_sne(df=self.og_df, title="Original t-SNE")
+        self.umap_test(df=self.og_df, title="Original UMAP")

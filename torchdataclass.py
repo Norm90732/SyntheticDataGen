@@ -33,7 +33,7 @@ class FuturesGenerativeDataset(Dataset):
 
 # Use dataset
 #temp
-dataset = FuturesGenerativeDataset("BZ.csv", window_size=60)
+dataset = FuturesGenerativeDataset("futures_data/BZ.csv", window_size=60)
 dataloader = DataLoader(dataset, batch_size=32, shuffle=True)
 
 for X in dataloader:
@@ -42,3 +42,5 @@ for X in dataloader:
 
 # Save one batch to disk
 torch.save(X, "features.pt")
+
+
